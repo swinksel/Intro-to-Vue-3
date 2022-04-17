@@ -15,7 +15,13 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <!-- v-bind is same as {{ image }}-->
+            <img v-bind:src="firstImage">
+
+            <!-- v-bind shortcut -->
+            <img :src="secondImage">
+
+            <a :href="url">Click me</a>
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
